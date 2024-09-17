@@ -1,0 +1,76 @@
+
+# mainly taken as a reference for the names used
+quats:
+  - 'Handpoint_Quaternion_v1'
+  - 'Handpoint_Quaternion_v2'
+  - 'Handpoint_Quaternion_v3'
+  - 'Handpoint_Quaternion_s'
+points:
+  - 'Handpoint_X'
+  - 'Handpoint_Y'
+  - 'Handpoint_Z'
+angles:
+  th_cmc_s: 'Thumb_CMC_Spread'
+  th_cmc_f: 'Thumb_CMC_Flex'
+  th_mcp_f: 'Thumb_MCP_Flex'
+  th_ip_f: 'Thumb_IP_Flex'
+  idx_mcp_s: 'Index_MCP_Spread'
+  idx_mcp_f: 'Index_MCP_Flex'
+  idx_pip_f: 'Index_PIP_Flex'
+  idx_dip_f: 'Index_DIP_Flex'
+
+
+X_names:
+  - Thumb_CMC_Spread
+  - Thumb_CMC_Flex
+  - Thumb_MCP_Flex
+  - Thumb_IP_Flex
+  - Index_MCP_Spread
+  - Index_MCP_Flex
+  - Index_PIP_Flex
+  - Index_DIP_Flex
+  - Middle_MCP_Spread
+  - Middle_MCP_Flex
+  - Middle_PIP_Flex
+  - Middle_DIP_Flex
+  - Ring_MCP_Spread
+  - Ring_MCP_Flex
+  - Ring_PIP_Flex
+  - Ring_DIP_Flex
+  - Pinky_MCP_Spread
+  - Pinky_MCP_Flex
+  - Pinky_PIP_Flex
+  - Pinky_DIP_Flex
+  - Handpoint_X
+  - Handpoint_Y
+  - Handpoint_Z
+  - Handpoint_Quaternion_v1
+  - Handpoint_Quaternion_v2
+  - Handpoint_Quaternion_v3
+  - Handpoint_Quaternion_s
+
+
+jointnames:
+  Wrist: 0
+  Palm: 1
+  Thumb_CMC: 2
+  Thumb_MCP: 3
+  Thumb_IP: 4
+  Thumb_TIP: 5
+  Index_MCP: 6
+  Index_PIP: 7
+  Index_DIP: 8
+  Index_TIP: 9
+  Middle_MCP: 10
+  Middle_PIP: 11
+  Middle_DIP: 12
+  Middle_TIP: 13
+  Ring_MCP: 14
+  Ring_PIP: 15
+  Ring_DIP: 16
+  Ring_TIP: 17
+  Pinky_MCP: 18
+  Pinky_PIP: 19
+  Pinky_DIP: 20
+  Pinky_TIP: 21
+

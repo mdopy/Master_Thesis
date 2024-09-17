@@ -1,0 +1,77 @@
+seed: 26
+seeds:
+  - 5
+  - 26
+  - 90
+  - 232
+  - 819
+  - 1027
+  - 5825
+  - 52408
+  - 88243
+  - 419748
+  - 786191
+  - 3907426
+  - 9741265
+  - 20465670
+  - 80337754
+  - 123456789
+  - 966726221
+  - 1625494306
+  - 3063573539
+  - 1898784207
+
+
+data:
+  notest: True # does not process test Data to speed up computing / not used anymore
+  clc_new_sequences: True
+
+  window_size: 144
+  window_stepsize: 5
+  n_classes: 15 # 14 or 15
+
+  fold: 1 # number form 1 to 8
+  testpersons: [1,12]
+
+  standardize: True
+  standardize_quaternions: True # only used if standardization is True, selection not used, always True
+  n_decisionframes:  # not used in fully convolutional
+  concatgestures: True
+  slide_data_into_window: False # only used when window length is smaller than the max sequence length, padding necessary
+  # otherwise first window contains first n frames of the sequence
+  window_padding: "zeros" # "none", "zeros", "firstframe"
+
+  point_reference: "first" # "none", "first", "mean"
+  quat_reference: "none" # "none", "first"
+
+  handgestdata_name: "handgestdata_angles5.pkl"
+  ODHG2024_name: "Dataset.pkl"
+  processedwindows_name: "WindowsProcessed.pkl"
+  windows_name: "Windows_concat"
+
+model:
+  max_pooling: True
+  regularization: 0.001
+  n_features: 27
+
+training:
+  learning_rate: 0.001 # 0.001
+  epochs: 30
+  batch_size: 64
+  log_dir: "fit"
+  histogram_freq: 1
+  verbose_settings: 2
+  early_stop:
+    use: True
+    monitor: "val_NLL"
+    patience: 10
+    min_epochs: 1
+  class_weights: "none" # class weights are not supported in the multilabel per window prediction models
+
+
+infos:
+  mean_smallest_timediff: 0.0181546418
+
+
+
+
